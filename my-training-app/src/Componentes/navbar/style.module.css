@@ -3,13 +3,15 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+  
 }
 body {
   margin: 0;
+  background-color: #606470;
 }
 
 .nav {
-  background-color: #323643;
+  background-color: #222831;
   color: #f5eded;
   display: flex;
   justify-content: flex-start; /* agora só sobra o "Site name" no fluxo, então ele vai pra direita */

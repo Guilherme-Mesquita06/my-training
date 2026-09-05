@@ -1,0 +1,35 @@
+.botaoCancelar {
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #E5533D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+.botaoCancelar:hover {
+    background-color: #B23A2A;
+}
+
+.botaoCancelar:active {
+    background-color: #96301F;
+}
+
+.botaoCancelar:disabled {
+    background-color: #c2c2c2;
+    color: #eee;
+    cursor: not-allowed;
+}
+.botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 2rem;
+}
