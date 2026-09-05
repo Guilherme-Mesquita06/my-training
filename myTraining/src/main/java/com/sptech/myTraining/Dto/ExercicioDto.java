@@ -1,6 +1,6 @@
 package com.sptech.myTraining.Dto;
 
-import com.sptech.montadorDeTreino.Enum.AgrupamentoMuscularEnum;
+import com.sptech.myTraining.Enum.AgrupamentoMuscularEnum;
 
 public class ExercicioDto {
 

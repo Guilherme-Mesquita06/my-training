@@ -1,9 +1,7 @@
-package com.sptech.montadorDeTreino.Controller;
+package com.sptech.myTraining.Controller;
 
 
-import com.sptech.montadorDeTreino.Dto.ExercicioDto;
-import com.sptech.montadorDeTreino.Dto.TreinoDto;
-import com.sptech.montadorDeTreino.Enum.AgrupamentoMuscularEnum;
+import com.sptech.myTraining.Dto.ExercicioDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
