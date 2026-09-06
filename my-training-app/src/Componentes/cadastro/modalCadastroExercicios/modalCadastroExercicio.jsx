@@ -1,4 +1,3 @@
-//import { useState } from "react";
 import { useState } from "react";
 import { BotaoCadastro } from "../../Botoes/BotaoCadastro/BotaoCadastro";
 import { BotaoCancelar } from "../../Botoes/BotaoCancelar/BotaoCancelar";
@@ -35,6 +34,8 @@ function atualizarAgrupamentoMuscular(evento){
   console.log(valorDigitado)
   setAgrupamentoMuscular(valorDigitado);
 }
+
+
 
 
 
