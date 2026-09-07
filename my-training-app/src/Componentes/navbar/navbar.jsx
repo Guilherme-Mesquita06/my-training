@@ -8,10 +8,10 @@ return (
         <a href="/" className={style.siteTitulo}>My Traning</a>
         <ul>
             <li className={style.li}>
-                <a href="/teste">Montar Treino</a>
+                <a href="/montarTreino">Montar Treino</a>
             </li>
             <li>
-                 <a href="/teste">Meus Treinos</a>
+                 <a href="/">Meus Treinos</a>
 
             </li>
             

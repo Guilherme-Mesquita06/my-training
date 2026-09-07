@@ -1,10 +1,10 @@
 import style from  "./style.module.css";
 
-
-export function BotaoCancelar(){
+// E preciso passar o tipo do elemento como parametro para o react não entender como submit no form
+export function BotaoCancelar({ onClick, type = "button" }){
 return (
     <>
-      <button className={style.botaoCancelar}>Cancelar</button>
+      <button  type={type} className={style.botaoCancelar}>Cancelar</button>
     
     </>
 )
