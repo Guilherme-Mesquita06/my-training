@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/exercicios")
+@CrossOrigin(origins = "http://localhost:5173")
 public class ExercicioController {
 
     private final JdbcTemplate template;
@@ -26,12 +27,12 @@ public class ExercicioController {
     @PostMapping
     public ResponseEntity<ExercicioDto> salvarTreino(@RequestBody ExercicioDto exercicioDto) {
 
-        if(validarCampos(exercicioDto)){
+        if(!(validarCampos(exercicioDto))){
 
-            return ResponseEntity.status(404).body(null);
+            return ResponseEntity.status(400).body(exercicioDto);
         }
 
-        String sql = "INSERT INTO Exercicio ( nome, descricao, agrupamentoMuscular, idTreino, series) VALUES (?,?,?, ?,?)";
+        String sql = "INSERT INTO Exercicio ( nome, descricao, agrupamentoMuscular, idTreino, serie) VALUES (?,?,?, ?,?)";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
@@ -39,9 +40,9 @@ public class ExercicioController {
             PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             statement.setString(1, exercicioDto.getNome());
             statement.setString(2, exercicioDto.getDescricao());
-            statement.setInt(3, exercicioDto.getAgrupamentoMuscular().getId());
-            statement.setInt(4, exercicioDto.getTreino().getId());
-            statement.setInt(5, exercicioDto.getSeries());
+            statement.setString(3, exercicioDto.getAgrupamentoMuscular());
+            statement.setInt(4, exercicioDto.getIdTreino());
+            statement.setInt(5, exercicioDto.getSerie());
 
 
         return statement;
@@ -53,36 +54,25 @@ public class ExercicioController {
         return ResponseEntity.status(201).body(exercicioDto);
     }
 
-    @GetMapping
-    public ResponseEntity<List<ExercicioDto>> buscarTreinoPorId (@RequestParam Integer id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<List<ExercicioDto>> buscarExerciciosPorTreinoId(@PathVariable("id") Integer id) {
 
-        if(id== null){
-            return ResponseEntity.status(404).body(null);
-        }
-
-        String sql = "SELECT * \n" +
-                "FROM exercicio ex \n" +
-                "JOIN treino t ON ex.idTreino = t.id \n" +
-                "WHERE t.id = ?";
+        String sql = "SELECT * FROM exercicio WHERE idTreino = ?";
 
         List<ExercicioDto> resultados = template.query(sql, new BeanPropertyRowMapper<>(ExercicioDto.class), id);
 
-        if(resultados.isEmpty()){
-            return ResponseEntity.status(204).build();
-        }
+
 
         return ResponseEntity.status(200).body(resultados);
-
-
     }
 
 
 
     public Boolean validarCampos (ExercicioDto exercicioDto) {
         if(exercicioDto.getNome() == null || exercicioDto.getNome().isEmpty()||
-                exercicioDto.getTreino() == null ||
-                exercicioDto.getSeries() == null || exercicioDto.getSeries() < 0 || exercicioDto.getSeries().equals(0) ||
-                exercicioDto.getAgrupamentoMuscular() == null
+                exercicioDto.getIdTreino() == null ||
+                exercicioDto.getSerie() == null || exercicioDto.getSerie() < 0 || exercicioDto.getSerie().equals(0) ||
+                exercicioDto.getAgrupamentoMuscular() == null || exercicioDto.getAgrupamentoMuscular().isEmpty()
         ) {
             return false;
         }

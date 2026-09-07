@@ -1,0 +1,73 @@
+2026-09-07T11:31:31.827-03:00  INFO 328600 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Starting MyTrainingApplication using Java 21.0.12.1 with PID 328600 (/home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining/target/classes started by mesquita in /home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining)
+2026-09-07T11:31:31.836-03:00  INFO 328600 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T11:31:33.038-03:00  INFO 328600 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-07T11:31:33.055-03:00  INFO 328600 --- [myTraining] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T11:31:33.055-03:00  INFO 328600 --- [myTraining] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T11:31:33.098-03:00  INFO 328600 --- [myTraining] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1188 ms
+2026-09-07T11:31:33.211-03:00  INFO 328600 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T11:31:33.446-03:00  INFO 328600 --- [myTraining] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:treinosBd user=SA
+2026-09-07T11:31:33.448-03:00  INFO 328600 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T11:31:33.860-03:00  INFO 328600 --- [myTraining] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:treinosBd'
+2026-09-07T11:31:33.936-03:00  INFO 328600 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-07T11:31:33.943-03:00  INFO 328600 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Started MyTrainingApplication in 2.896 seconds (process running for 3.673)
+2026-09-07T11:44:32.106-03:00  INFO 328600 --- [myTraining] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T11:44:32.106-03:00  INFO 328600 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T11:44:32.110-03:00  INFO 328600 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-07T13:02:56.425-03:00  INFO 328600 --- [myTraining] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T13:02:56.432-03:00  INFO 328600 --- [myTraining] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T13:02:56.436-03:00  INFO 328600 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T13:02:56.443-03:00  INFO 328600 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T13:02:59.856-03:00  INFO 338975 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Starting MyTrainingApplication using Java 21.0.12.1 with PID 338975 (/home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining/target/classes started by mesquita in /home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining)
+2026-09-07T13:02:59.860-03:00  INFO 338975 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T13:03:01.079-03:00  INFO 338975 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-07T13:03:01.096-03:00  INFO 338975 --- [myTraining] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T13:03:01.096-03:00  INFO 338975 --- [myTraining] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T13:03:01.135-03:00  INFO 338975 --- [myTraining] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1198 ms
+2026-09-07T13:03:01.250-03:00  INFO 338975 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T13:03:01.499-03:00  INFO 338975 --- [myTraining] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:treinosBd user=SA
+2026-09-07T13:03:01.501-03:00  INFO 338975 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T13:03:01.876-03:00  INFO 338975 --- [myTraining] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:treinosBd'
+2026-09-07T13:03:01.949-03:00  INFO 338975 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-07T13:03:01.954-03:00  INFO 338975 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Started MyTrainingApplication in 2.807 seconds (process running for 3.606)
+2026-09-07T13:03:55.687-03:00  INFO 338975 --- [myTraining] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T13:03:55.688-03:00  INFO 338975 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T13:03:55.693-03:00  INFO 338975 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-07T14:19:42.128-03:00  WARN 338975 --- [myTraining] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "undefined"]
+2026-09-07T14:25:41.084-03:00  INFO 338975 --- [myTraining] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T14:25:41.091-03:00  INFO 338975 --- [myTraining] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T14:25:41.098-03:00  INFO 338975 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T14:25:41.106-03:00  INFO 338975 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T14:25:45.666-03:00  INFO 353567 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Starting MyTrainingApplication using Java 21.0.12.1 with PID 353567 (/home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining/target/classes started by mesquita in /home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining)
+2026-09-07T14:25:45.669-03:00  INFO 353567 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T14:25:46.968-03:00  INFO 353567 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-07T14:25:46.988-03:00  INFO 353567 --- [myTraining] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T14:25:46.988-03:00  INFO 353567 --- [myTraining] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T14:25:47.043-03:00  INFO 353567 --- [myTraining] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1303 ms
+2026-09-07T14:25:47.155-03:00  INFO 353567 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T14:25:47.413-03:00  INFO 353567 --- [myTraining] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:treinosBd user=SA
+2026-09-07T14:25:47.415-03:00  INFO 353567 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T14:25:47.827-03:00  INFO 353567 --- [myTraining] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:treinosBd'
+2026-09-07T14:25:47.911-03:00  INFO 353567 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-07T14:25:47.918-03:00  INFO 353567 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Started MyTrainingApplication in 2.952 seconds (process running for 3.551)
+2026-09-07T14:25:57.005-03:00  INFO 353567 --- [myTraining] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T14:25:57.006-03:00  INFO 353567 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T14:25:57.009-03:00  INFO 353567 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-07T18:59:53.355-03:00  INFO 353567 --- [myTraining] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T18:59:53.360-03:00  INFO 353567 --- [myTraining] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T18:59:53.364-03:00  INFO 353567 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T18:59:53.368-03:00  INFO 353567 --- [myTraining] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T18:59:58.613-03:00  INFO 364909 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Starting MyTrainingApplication using Java 21.0.12.1 with PID 364909 (/home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining/target/classes started by mesquita in /home/mesquita/Documents/facu/3sem/projeto/my-training/myTraining)
+2026-09-07T18:59:58.624-03:00  INFO 364909 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T19:00:00.222-03:00  INFO 364909 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-07T19:00:00.249-03:00  INFO 364909 --- [myTraining] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T19:00:00.249-03:00  INFO 364909 --- [myTraining] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T19:00:00.314-03:00  INFO 364909 --- [myTraining] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1538 ms
+2026-09-07T19:00:00.433-03:00  INFO 364909 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T19:00:00.725-03:00  INFO 364909 --- [myTraining] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:treinosBd user=SA
+2026-09-07T19:00:00.729-03:00  INFO 364909 --- [myTraining] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T19:00:01.208-03:00  INFO 364909 --- [myTraining] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:treinosBd'
+2026-09-07T19:00:01.280-03:00  INFO 364909 --- [myTraining] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-07T19:00:01.286-03:00  INFO 364909 --- [myTraining] [main] c.s.myTraining.MyTrainingApplication     : Started MyTrainingApplication in 3.793 seconds (process running for 4.6)
+2026-09-07T19:02:18.933-03:00  INFO 364909 --- [myTraining] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T19:02:18.934-03:00  INFO 364909 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T19:02:18.936-03:00  INFO 364909 --- [myTraining] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

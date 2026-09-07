@@ -5,44 +5,18 @@ CREATE TABLE treino (
                         observacao VARCHAR(255)
 );
 
--- Tabela de apoio para o Enum AgrupamentoMuscular
-CREATE TABLE agrupamento_muscular (
-                                      id INT PRIMARY KEY,
-                                      nome VARCHAR(50) NOT NULL
-);
-
 -- Tabela Exercicio
 CREATE TABLE exercicio (
                            id INT AUTO_INCREMENT PRIMARY KEY,
                            nome VARCHAR(100) NOT NULL,
                            descricao VARCHAR(255),
-                           series INT,
-                           agrupamentoMuscular INT NOT NULL,
+                           serie INT,
+                           agrupamentoMuscular VARCHAR(50) NOT NULL,
                            idTreino INT NOT NULL,
-                           CONSTRAINT exercicioAgrupamento FOREIGN KEY (agrupamentoMuscular) REFERENCES agrupamento_muscular(id),
                            CONSTRAINT exercicioTreino FOREIGN KEY (idTreino) REFERENCES treino(id)
 );
 
 
-
-
--- Populando a tabela de agrupamento muscular
-INSERT INTO agrupamento_muscular (id, nome) VALUES
-                                                (1, 'Peito'),
-                                                (2, 'Costas'),
-                                                (3, 'Ombro'),
-                                                (4, 'Bíceps'),
-                                                (5, 'Tríceps'),
-                                                (6, 'Antebraço'),
-                                                (7, 'Abdômen'),
-                                                (8, 'Quadríceps'),
-                                                (9, 'Posterior de Coxa'),
-                                                (10, 'Glúteo'),
-                                                (11, 'Panturrilha'),
-                                                (12, 'Trapézio'),
-                                                (13, 'Lombar'),
-                                                (14, 'Adutores'),
-                                                (15, 'Abdutores');
 
 
 -- Treino 1

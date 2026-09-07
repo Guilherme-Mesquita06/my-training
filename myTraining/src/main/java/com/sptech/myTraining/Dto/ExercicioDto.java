@@ -1,25 +1,16 @@
 package com.sptech.myTraining.Dto;
 
-import com.sptech.myTraining.Enum.AgrupamentoMuscularEnum;
 
 public class ExercicioDto {
 
     private Integer id;
     private String nome;
     private String descricao;
-    private AgrupamentoMuscularEnum agrupamentoMuscular;
-    private TreinoDto treino;
-    private Integer series;
+    private String agrupamentoMuscular;
+    private Integer idTreino;
+    private Integer serie;
 
 
-
-    public Integer getSeries() {
-        return series;
-    }
-
-    public void setSeries(Integer series) {
-        this.series = series;
-    }
 
     public Integer getId() {
         return id;
@@ -45,19 +36,27 @@ public class ExercicioDto {
         this.descricao = descricao;
     }
 
-    public AgrupamentoMuscularEnum getAgrupamentoMuscular() {
+    public String getAgrupamentoMuscular() {
         return agrupamentoMuscular;
     }
 
-    public void setAgrupamentoMuscular(AgrupamentoMuscularEnum agrupamentoMuscular) {
+    public void setAgrupamentoMuscular(String agrupamentoMuscular) {
         this.agrupamentoMuscular = agrupamentoMuscular;
     }
 
-    public TreinoDto getTreino() {
-        return treino;
+    public Integer getIdTreino() {
+        return idTreino;
     }
 
-    public void setTreino(TreinoDto treino) {
-        this.treino = treino;
+    public void setIdTreino(Integer idTreino) {
+        this.idTreino = idTreino;
+    }
+
+    public Integer getSerie() {
+        return serie;
+    }
+
+    public void setSerie(Integer serie) {
+        this.serie = serie;
     }
 }

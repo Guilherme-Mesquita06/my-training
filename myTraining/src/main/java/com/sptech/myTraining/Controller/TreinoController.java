@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/treinos")
+@CrossOrigin(origins = "http://localhost:5173")
 public class TreinoController {
 
     private final JdbcTemplate template;
@@ -27,7 +28,7 @@ public class TreinoController {
     public ResponseEntity<TreinoDto> salvarTreino(@RequestBody TreinoDto treinoDto) {
 
         if(treinoDto.getNome() == null || treinoDto.getNome().isEmpty()){
-            return ResponseEntity.status(404).body(null);
+            return ResponseEntity.status(400).body(null);
         }
 
 
